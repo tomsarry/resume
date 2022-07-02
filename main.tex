@@ -1,0 +1,215 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Tom Sarry}} & Email: \href{mailto:}{tom.sarry@mail.mcgill.ca}\\
+  % \href{https://xprilion.com}{Portfolio: xprilion.com} & Mobile:~~~+91-XXX-XXXX-XXX \\
+  \href{https://github.com/tomsarry}{Github: ~~~~github.com/tomsarry} \\
+  \href{https://www.linkedin.com/in/tom-sarry-5525a8173/}{LinkedIn: ~~linkedin.com/in/tom-sarry-5525a8173} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McGill University}{Montreal, Canada}
+      {Bachelor of Science - Computer Science;  GPA: 4.0}{Sept 2019 - April 2022}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Blockchain Systems, Distributed Systems, Networks, Databases, Operating Systems, Artificial Intelligence.}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Research Experience:} Collaborated with two McGill professors to submit a paper to the ICSE conference.}}}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Extra Curriculars} Java OOP tutor, Functional Programming mentor.}}}
+    \resumeSubheading
+      {Université de Montréal}{Montréal, Canada}
+      {Masters of Science - Computer Science}{Sept 2022 - Present}
+      % TODO: fill when I took the classes :)
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Blockchain Systems, Distributed Systems, Networks, Databases, Operating Systems, Artificial Intelligence }}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{French (Native), English (Fluent), Spanish (Intermediary)}
+	\resumeSubItem{Programming Languages}{C++, Go, TypeScript, Bash, JAVA}
+	\resumeSubItem{Frameworks}{React, Svelte, Qt}
+	\resumeSubItem{Tools}{Git, Docker, Datadogs, PostgresQL, Firebase, MongoDB}
+	\resumeSubItem{Platforms}{Linux, Windows}
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    % Broadsign
+    \resumeSubheading{Broadsign}{Montreal, Canada}
+    {Software Engineer Intern}{May 2022 - Aug 2022}
+    \resumeItemListStart
+        \resumeItem{C++}
+          {Maintained performance-critical code used in more than 50,000 advertisement players around the world.}
+        \resumeItem{Kafka}
+          {Created polling and processing of events in a new microservice used to unify Broadsign's applications.}
+        \resumeItem{GTest}
+          {Added unit and integration tests, following the TDD paradigm.}
+    \resumeItemListEnd
+
+    % Bitstack
+    \resumeSubheading
+		{Bitstack}{Remote}
+		{Softare Developer Intern}{May 2021 - Aug 2021}
+		\resumeItemListStart
+        \resumeItem{Flutter}
+          {Built most screens for a Bitcoin automated savings application.}
+        \resumeItem{Dart}
+          {Took ownership of multiple core components of the application, such as the user's portfolio graph, with multiple period selection and automated caching for efficiency.}
+        \resumeItem{Python / FastAPI}
+          {Created a REST API endpoint to generate monthly user statements as PDF for any given period.}
+        \resumeItem{i18n}
+          {Integrated an i18n translation module and currency formatting for both french and english speaking users.}
+        \resumeItem{Websockets}
+          {Set up a Websocket connection to retrieve live data about Bitcoin’s price from our third party.}
+		\resumeItemListEnd
+
+    % Sweater Planet
+    \resumeSubheading
+		{Sweater Planet}{Remote}
+		{Softare Developer Intern}{Jan 2021 - Apr 2021}
+		\resumeItemListStart
+        \resumeItem{React (TypeScript)}
+          {Built core screens for user-facing and admin panel of the application.}
+        \resumeItem{Node (TypeScript)}
+          {Developed core micro-services to allow users create and manage their own merchandise store.}
+        \resumeItem{Mocha / Chai}
+          {Added unit tests to increase code coverage.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{5pt}
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    % Wasted on Youtube
+    \resumeSubheading
+		{Wasted on Youtube}{\href{https://github.com/tomsarry/WOYT}{See on github}}
+		{Data Processing, React, Go, Docker}{Aug 2020 - Sep 2020}
+		\resumeItemListStart
+        \resumeItem{Go}
+          {Backend to compute the total estimated time spent on Youtube, with the Youtube API and Google Takeout.}
+        \resumeItem{Performance}
+          {Randomized sampling and multi-threading to decrease API calls duration from 2h30 to 500ms.}
+        \resumeItem{React (TypeScript)}
+          {Created a web application to allow users to interact easily with the Backend.}
+        \resumeItem{Hosting}
+          {Hosted this project using Heroku and Netlify, to let anyone enjoy it.}
+		\resumeItemListEnd
+
+    % Kattis Scrapper 
+    \resumeSubheading{Kattis Scrapper}{\href{https://github.com/tomsarry/kattis-scraper}{See on github}}
+    {Web Scraper, Go}{Nov 2022}
+    \resumeItemListStart
+        \resumeItem{Go}
+          {Created a web scrapper for the Kattis website to retrieve the problems solved.}
+    \resumeItemListEnd
+
+    % Weather
+    \resumeSubheading{Weater}{\href{https://github.com/tomsarry/weather}{See on github}}
+    {CLI, Go}{Nov 2022}
+    \resumeItemListStart
+        \resumeItem{Go}
+          {Built a fast CLI weather app to get the weather for any city, used in my Linux environment.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Awards-----------------
+\vspace{5pt}
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+  \item {\textbf{Science Scholarship (x2):} awarded to the top 5\% students in the science faculty at McGill.}
+  \item {\textbf{2nd place winner Internet of Things, Codejam Hack}: 300 participants, 40 submissions}
+\end{description}
+
+\vspace{5pt}
+\section{Hobbies}
+\begin{description}[font=$\bullet$]
+  \item \textbf{Bitcoin, Lightning Network, Cooking}
+  \item \textbf{Long distance running:} Half marathon finisher (x2), currently training for Montreal Marathon.  
+\end{description}
+
+\end{document}
